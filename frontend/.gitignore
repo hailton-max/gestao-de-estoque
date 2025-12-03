@@ -1,0 +1,18 @@
+# --- ANGULAR ---
+node_modules/
+dist/
+.angular/
+.vscode/
+
+# --- JAVA / ECLIPSE ---
+target/
+*.class
+bin/
+.settings/
+.classpath
+.project
+*.war
+
+# --- SISTEMA ---
+.DS_Store
+Thumbs.db
