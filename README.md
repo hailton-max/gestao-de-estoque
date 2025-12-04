@@ -12,6 +12,9 @@ Diferente de projetos comuns que dependem excessivamente de frameworks, este sis
 
 <img width="2554" height="910" alt="image" src="https://github.com/user-attachments/assets/7f90f0fa-fe6c-44e9-b540-8e7595ccc81b" />
 
+<img width="2555" height="907" alt="image" src="https://github.com/user-attachments/assets/b6c679a4-96b9-4d53-8c92-5fa1bfd76200" />
+
+
 
 ---
 
