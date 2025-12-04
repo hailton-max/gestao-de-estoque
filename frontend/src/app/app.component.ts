@@ -26,12 +26,18 @@ import { ProdutoDialogComponent } from './produto-dialog/produto-dialog';
 
     <div style="padding: 20px; max-width: 900px; margin: 0 auto;">
       <mat-card>
-        <mat-card-header style="display: flex; justify-content: space-between; align-items: center; padding: 16px;">
+       <mat-card-header style="display: flex; justify-content: space-between; align-items: center; padding: 16px;">
           <mat-card-title>Lista de Produtos</mat-card-title>
 
-          <button mat-raised-button color="accent" (click)="abrirDialog()">
-            <mat-icon>add</mat-icon> Novo Produto
-          </button>
+          <div>
+            <button mat-stroked-button color="primary" (click)="baixarRelatorio()" style="margin-right: 10px;">
+              <mat-icon>picture_as_pdf</mat-icon> Relatório PDF
+            </button>
+
+            <button mat-raised-button color="accent" (click)="abrirDialog()">
+              <mat-icon>add</mat-icon> Novo Produto
+            </button>
+          </div>
         </mat-card-header>
 
         <mat-card-content>
@@ -153,5 +159,10 @@ export class AppComponent implements OnInit {
         error: (err) => alert('Erro ao excluir.')
       });
     }
+  }
+
+  baixarRelatorio() {
+    // Abre a URL do Servlet em uma nova aba, o que inicia o download
+    window.open('http://localhost:8080/supply-chain-backend/api/relatorio/produtos', '_blank');
   }
 }
